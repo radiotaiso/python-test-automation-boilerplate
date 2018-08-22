@@ -34,6 +34,7 @@ $ pip install -r requirements.txt
 
 ## Run the tests!
 
+All you need to do is:
 ```bash
 python -m unittest
 ```
@@ -50,9 +51,9 @@ python -m unittest test_module.TestClass.test_method
 
 TBD
 
-## Troubleshooting
+### Troubleshooting
 
-Common error #1
+#### Common error #1
 
 
 `ImportError: Import by filename is not supported.`
@@ -61,8 +62,13 @@ You can make sure you have the right python version with
 ```bash
 $ python --version
 ```
+You might need to run commands using `python3` try:
+```bash
+$ which python3
+```
+and it should have a path to your virtualenv python installation.
 
-Common error #2
+#### Common error #2
 
 `ModuleNotFoundError: No module named 'selenium'`
 
