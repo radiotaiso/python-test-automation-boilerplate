@@ -1,6 +1,6 @@
-# Insikt-lendify financial health portal test automation.
+# Test automation Boilerplate
 
-Financial health portal automated UI testing.
+Python + unittest + selenium = `<3`
 
 ## Prerequisites
 
