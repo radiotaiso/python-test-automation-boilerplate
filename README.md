@@ -47,9 +47,19 @@ python -m unittest test_module.TestClass
 python -m unittest test_module.TestClass.test_method
 ```
 
+Keep in mind that the files containig your tests need to be named `test_{whatever}` so it can be found by unit test, 
+else you would have to pass the filename as an argument.
+
 ## Docker
 
-TBD
+You have to build the image first
+```bash
+docker build . -t python-automation # you can name your image anything you want just remember it.
+```
+run it!
+```bash
+docker run -it python-automation
+```
 
 ### Troubleshooting
 
