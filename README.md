@@ -30,6 +30,12 @@ $ source your_env_name/bin/activate
 ```bash
 $ pip install -r requirements.txt
 ```
+
+6. Install Chromedriver
+```bash
+$ # Instructions go here :derp:
+```
+
 6. You're done!
 
 ## Run the tests!
