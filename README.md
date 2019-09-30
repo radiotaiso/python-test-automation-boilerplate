@@ -7,8 +7,10 @@ Python + unittest + selenium = `<3`
 - Python 3
 - Selenium (already in requrements.txt)
 - Virtualenvironment
+- Docker
 
-## Setup
+## Local setup
+
 
 1. Install `python3` 
 2. Install `virtualenv` 
@@ -33,12 +35,13 @@ $ pip install -r requirements.txt
 
 6. Install Chromedriver
 ```bash
-$ # Instructions go here :derp:
+$ wget -O /tmp/chromedriver.zip http://chromedriver.storage.googleapis.com/`curl -sS chromedriver.storage.googleapis.com/LATEST_RELEASE`/chromedriver_linux64.zip
+$ unzip /tmp/chromedriver.zip chromedriver -d /usr/local/bin/
 ```
 
 6. You're done!
 
-## Run the tests!
+## Run the tests locally
 
 All you need to do is:
 ```bash
@@ -53,10 +56,10 @@ python -m unittest test_module.TestClass
 python -m unittest test_module.TestClass.test_method
 ```
 
-Keep in mind that the files containig your tests need to be named `test_{whatever}` so it can be found by unit test, 
+Keep in mind that the files containing your tests need to be named `test_{whatever}` so it can be found by unit test, 
 else you would have to pass the filename as an argument.
 
-## Docker
+## Run the tests using Docker
 
 You have to build the image first
 ```bash
