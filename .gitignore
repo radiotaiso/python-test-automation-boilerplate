@@ -107,3 +107,6 @@ env-insikt/
 # PyCharm/OSx junk
 .idea
 .DS_Store
+
+# Misc dirs
+screenshots/
