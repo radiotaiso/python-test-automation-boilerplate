@@ -1,7 +1,4 @@
-# from Elements.Element import BasePageElement
-from Locators.LoginLocators import LoginLocators
 from Locators.SearchLocators import SearchLocators
-import pdb
 
 
 class BasePage(object):

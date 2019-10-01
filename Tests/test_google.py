@@ -1,4 +1,5 @@
 import unittest
+from datetime import datetime
 from PageObjects import SearchPage
 from selenium import webdriver
 
@@ -24,6 +25,9 @@ class SearchTest(unittest.TestCase):
         search_page = SearchPage.Search(self.driver)
         search_page.set_query()
         search_page.click_search()
+        now = datetime.now()
+        timestamp = now.strftime("%m%d%Y%H%M")
+        self.driver.save_screenshot(f'screenshots/{timestamp}.png')
         assert search_page.results_visible()
 
     def tearDown(self):
