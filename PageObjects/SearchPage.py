@@ -14,12 +14,19 @@ class Search(BasePage):
         element = self.driver.find_element(*SearchLocators.SEARCH_INPUT)
         element.send_keys("Selenium with Python")
 
-    def click_search(self):
-        element = self.driver.find_element(*SearchLocators.SEARCH_BUTTON)
+    def click_login(self):
+        element = self.driver.find_element(*SearchLocators.LOGIN_SUBMIT)
         element.click()
 
     def results_visible(self):
-        element = self.driver.find_element(*SearchLocators.SEARCH_RESULTS)
+        element = self.driver.find_element(*SearchLocators.NEW_MSG_BUTTON)
         if element:
             return True
 
+    def set_user(self):
+        element = self.driver.find_element(*SearchLocators.EMAIL_BOX)
+        element.send_keys("uriel@yalochat.com")
+
+    def set_pass(self):
+        element = self.driver.find_element(*SearchLocators.PASS_BOX)
+        element.send_keys("")

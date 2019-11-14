@@ -6,3 +6,8 @@ class SearchLocators(object):
     SEARCH_INPUT = (By.NAME, 'q')
     SEARCH_BUTTON = (By.NAME, 'btnK')
     SEARCH_RESULTS = (By.CLASS_NAME, 'med')
+
+    EMAIL_BOX = (By.ID, "email")
+    PASS_BOX = (By.ID, "pass")
+    LOGIN_SUBMIT = (By.ID, "loginbutton")
+    NEW_MSG_BUTTON = (By.XPATH, "//a[@title='New Message']")
